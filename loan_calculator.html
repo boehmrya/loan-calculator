@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Loan Calculator SPA</title>
+	  <link rel="stylesheet" type="text/css" href="loan_calculator.css">
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="form">
+				<div class="form-item">
+					<div class="form-label">
+						<label>Loan Amount</label>
+					</div>
+					<div class="form-input">
+						<input id="amount">
+					</div>
+				</div>
+				<div class="form-item">
+					<div class="form-label">
+						<label>Annual Interest</label>
+					</div>
+					<div class="form-input">
+						<input id="apr">
+					</div>
+				</div>
+				<div class="form-item">
+					<div class="form-label">
+						<label>Repayment Period (Years)</label>
+					</div>
+					<div class="form-input">
+						<input id="years">
+					</div>
+				</div>
+
+
+				<!-- Button to Calculate Payments -->
+				<div class="form-item">
+					<div class="form-label">
+						<label>Approximate Payments</label>
+					</div>
+					<div class="form-input">
+						<button id="button">Calculate</button>
+					</div>
+				</div>
+
+
+				<!-- Display Stats -->
+				<div class="monthly-payment">Monthly Payment: <span class="output" id="monthly-payment"></span></div>
+				<div class="total-payment">Total Payment: <span class="output" id="total-payment"></span></div>
+				<div class="total-interest">Total Interest: <span class="output" id="total-interest"></span></div>
+
+
+			</div>
+
+		</div>
+		
+	<script src="loan_calculator.js"></script>
+	</body>
+  
+</html>
